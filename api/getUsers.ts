@@ -6,7 +6,7 @@ export const getUsers = async () => {
   return res.json();
 };
 
-export const getUser = async (id) => {
+export const getUser = async (id: string) => {
   console.log(id);
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
 

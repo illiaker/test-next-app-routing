@@ -1,7 +1,7 @@
-import { getUser } from "@/api/getUsers";
+import { getNft } from "../../../api/getNfts";
 
 export default async function Nft({ params }) {
-  const user = await getUser(params.id);
+  const user = await getNft(params.id);
 
   return (
     <div>
